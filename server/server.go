@@ -24,7 +24,7 @@ func main() {
 			fmt.Println(err)
 			continue
 		}
-		handleConnection(conn)  // запускаем горутину для обработки запроса
+		go handleConnection(conn)  // запускаем горутину для обработки запроса
 	}
 }
 // обработка подключения

@@ -24,10 +24,10 @@ func main() {
 			fmt.Println(err)
 			continue
 		}
-		go handleConnection(conn)  // запускаем горутину для обработки запроса
+		go handleConnection(conn)
 	}
 }
-// обработка подключения
+
 func handleConnection(conn net.Conn) {
 	defer conn.Close()
 	reader := bufio.NewReader(conn)

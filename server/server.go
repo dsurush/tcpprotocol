@@ -24,8 +24,9 @@ func main() {
 			fmt.Println(err)
 			continue
 		}
-		go handleConnection(conn)
+		go handlgeConnection(conn)
 	}
+
 }
 
 func handleConnection(conn net.Conn) {
